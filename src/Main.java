@@ -18,7 +18,7 @@ public class Main {
                 Socket socket = serverSocket.accept();
                 Server socketThread = new Server(socket, server, names);
                 Thread thread = new Thread(socketThread);
-                thread.setDaemon(true);
+
                 thread.start();
                 server.add(socketThread);
 

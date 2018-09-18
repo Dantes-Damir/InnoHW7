@@ -21,7 +21,6 @@ public class ChatClient {
         scanner = new Scanner(System.in);
 
         new Thread(new SocketReader(socket, this)).start();
-
     }
 
     public void startChat() {
